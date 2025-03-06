@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блеск и красота</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__logo-location">
+                <a class="header_logo" href="../index.html">Блеск и красота</a>
+                <a class="header__link" href="cataloge.html">Последняя коллекция</a>
+                <a class="header__link" href="registration.html">Связь с нами</a>
+                <div class="header__location">
+                    <img src="../img\photo_5235755014784413050_y.jpg" alt="">
+                    <p class="header__adress">Республика Крым, Симферополь, ул. Гагарина 19А</p>
+                </div>
+            </div>
+
+
+
+            <div class="header__company-slogan">
+                <p class="all__slogan">
+                    Добро пожаловать в ювелирный магазин <span class="slogan">"Блеск и красота"!</span><br> Мы рады
+                    представить
+                    вам уникальный мир изысканных украшений, где каждая деталь создана с любовью и вниманием к качеству.
+                    Наша цель — помочь вам найти идеальное украшение, которое подчеркнёт вашу индивидуальность и станет
+                    символом важных моментов в
+                    жизни.
+                </p>
+                <img src="../img/i.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="section_ordering-decorations"></div>
+                <h1 class="header__form">Заказать украшение</h1>
+                <form action="" method="post">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" oninput="onlynumbers(this)" name="phone"
+                        placeholder="Введите номер телефона" required>
+
+                    <label for="product">Выберите украшение:</label>
+                    <select id="product" name="product" required>
+                        <option value="">-- Выберите украшение --</option>
+                        <option value="кольцо">Кольцо</option>
+                        <option value="серьги">Серьги</option>
+                        <option value="кулон">Кулон</option>
+                        <option value="браслет">Браслет</option>
+                    </select>
+
+                    <label for="message">Комментарий (дополнительно):</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Напишите комментарий к заказу"></textarea>
+                    <button class="" type="submit">Отправить заказ</button>
+                </form>
+            </div>
+            <script>
+                function onlynumbers(phone) {
+                    let Str = phone.value;
+                    Str = Str.replace(/\D/g, "");
+                    phone.value = "+" + Str;
+                }
+            </script>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__contacts">
+                <div class="footer__contacts-info">
+                    <p class="footer__contacts-title--white">КОНТАКТЫ:</p>
+                    <p class="footer__contacts-text">Симферополь, ул. Гагарина 19А <br>
+                        +7 978 000-000-000 <br>
+                        <a class="footer__mail-link"
+                            href="mailto:blesk-i-krasota@gmail.com">blesk-i-krasota@gmail.com</a>
+                    </p>
+                </div>
+                <div class="footer__write-container">
+                    <a class="footer__write" href="../html\registration.html">НАПИСАТЬ НАМ</a>
+                </div>
+            </div>
+            <div class="footer__social-media">
+                <a href="#"><img src="../img/instagram.png" alt="Иконка инстаграм"></a>
+                <a href="#"><img src="../img/youtube.png" alt="Иконка ютуб"></a>
+                <a href="#"><img src="../img/twitter.png" alt="Иконка твиттер"></a>
+                <a href="#"><img src="../img/google-plus.png" alt="Иконка гугл-плюс"></a>
+            </div>
+            <p class="footer__copyright">Все права защищены.©</p>
+        </div>
+    </footer>
+</body>
